@@ -25,7 +25,7 @@ class motorDriver
         digitalWrite(ML2, 0);
         digitalWrite(MR1, 0);
         digitalWrite(MR2, 0);
-        Serial.println("Brake");
+        //Serial.println("Brake");
     }
 
     void discBrake() // 001 
@@ -34,7 +34,7 @@ class motorDriver
       digitalWrite(ML2, 1);
       digitalWrite(MR1, 1);
       digitalWrite(MR2, 1);
-      Serial.println(" Disc Brake");
+      //Serial.println(" Disc Brake");
     }
     
     void forward() // 010
@@ -44,7 +44,7 @@ class motorDriver
         digitalWrite(ML2, 0);
         digitalWrite(MR1, 1);
         digitalWrite(MR2, 0);
-        Serial.println("Forward");
+       // Serial.println("Forward");
       
     }
 
@@ -54,7 +54,7 @@ class motorDriver
         digitalWrite(ML2, 1);
         digitalWrite(MR1, 0);
         digitalWrite(MR2, 1);
-        Serial.println("Reverse");
+        //Serial.println("Reverse");
     }
     
     void left()  // 100
@@ -63,7 +63,7 @@ class motorDriver
         digitalWrite(ML2, 0);
         digitalWrite(MR1, 1);
         digitalWrite(MR2, 0);
-        Serial.println("Left");
+        //Serial.println("Left");
     }
 
     void hardLeft() // 101
@@ -72,7 +72,7 @@ class motorDriver
         digitalWrite(ML2, 1);
         digitalWrite(MR1, 1);
         digitalWrite(MR2, 0);
-        Serial.println("Hard Left");
+      //  Serial.println("Hard Left");
     }
 
     void right()
@@ -81,7 +81,7 @@ class motorDriver
         digitalWrite(ML2, 0);
         digitalWrite(MR1, 0);
         digitalWrite(MR2, 0);
-        Serial.println(" Right");
+        //Serial.println(" Right");
     }
 
     void hardRight()
@@ -90,7 +90,7 @@ class motorDriver
         digitalWrite(ML2, 0);
         digitalWrite(MR1, 0);
         digitalWrite(MR2, 1);
-        Serial.println("Hard Right");
+        //Serial.println("Hard Right");
     }
 
 };
